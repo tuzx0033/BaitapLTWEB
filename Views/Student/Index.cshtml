@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Trang Đăng Ký Chuyên Ngành";
+}
+
+<div class="container">
+    <h2 class="text-center mb-4">Đăng Ký Chuyên Ngành</h2>
+    <form method="post" action="/Student/ShowKQ">
+        <div class="mb-3">
+            <label for="MSSV" class="form-label">MSSV:</label>
+            <input type="text" class="form-control" id="MSSV" name="MSSV" required />
+        </div>
+        <div class="mb-3">
+            <label for="FullName" class="form-label">Họ Tên:</label>
+            <input type="text" class="form-control" id="FullName" name="FullName" required />
+        </div>
+        <div class="mb-3">
+            <label for="GPA" class="form-label">Điểm TB:</label>
+            <input type="number" class="form-control" id="GPA" name="GPA" step="0.01" required />
+        </div>
+        <div class="mb-3">
+            <label for="Major" class="form-label">Chuyên Ngành:</label>
+            <select class="form-select" id="Major" name="Major" required>
+                <option value="CNPM">CNPM</option>
+                <option value="HTTT">HTTT</option>
+                <option value="ANM">ANM</option>
+                <option value="TTNT">TTNT</option>
+                <option value="MMT">MMT</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Đăng Ký</button>
+    </form>
+</div>

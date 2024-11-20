@@ -1,0 +1,19 @@
+@model StudentRegistrationApp.Models.Student
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Cảm ơn bạn đã đăng ký</h2>
+    
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Chúc mừng bạn!</h4>
+        <p>Cảm ơn bạn @Model.MSSV - @Model.FullName đã đăng ký chuyên ngành <strong>@Model.Major</strong>.</p>
+    </div>
+
+    <div class="alert alert-info" role="alert">
+        <h4 class="alert-heading">Thông tin đăng ký ngành</h4>
+        <p>Số lượng sinh viên đã đăng ký ngành giống bạn là: <strong>@ViewBag.StudentCount</strong></p>
+    </div>
+
+    <div class="text-center">
+        <a href="/Student/Index" class="btn btn-primary">Quay lại trang đăng ký</a>
+    </div>
+</div>
